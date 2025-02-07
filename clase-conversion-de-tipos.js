@@ -32,16 +32,16 @@ console.log(sumWithNumber);
 const stringValue = '10'
 const numberValue = 10
 const booleanValue = true
-
-console.log(stringValue + numberValue);
-console.log(stringValue + booleanValue);
-console.log(stringValue + stringValue);
-console.log(numberValue + stringValue);
-console.log(numberValue + booleanValue);
-console.log(numberValue + numberValue);
-console.log(booleanValue + stringValue);
-console.log(booleanValue + numberValue);
-console.log(booleanValue + booleanValue);
+console.log('Hola mundo');
+console.log(stringValue + numberValue); // Concatena
+console.log(stringValue + booleanValue); //Concatena
+console.log(stringValue + stringValue); //Concatena
+console.log(numberValue + stringValue); //Concatena
+console.log(numberValue + booleanValue); //Suma
+console.log(numberValue + numberValue); //suma
+console.log(booleanValue + stringValue); // Concatena
+console.log(booleanValue + numberValue); // Suma
+console.log(booleanValue + booleanValue); // Suma
 
 
 
