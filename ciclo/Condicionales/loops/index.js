@@ -46,14 +46,63 @@ Se quiere un bucle que genere una lista con todos los números pares positivos p
 Si tecleo el número el número 9 deberá mostrar cinco lineas con los números 0 2 4 6 8
 */
 
-let par = 0
-let msg = ''
-let contar
-let max
-max = parseInt(prompt("Teclear un número entero"))
-for(contar = 1;par < max; contar++){
-        msg += par + ", "
-        par = contar * 2
+// let par = 0
+// let msg = ''
+// let contar
+// let max
+// max = parseInt(prompt("Teclear un número entero"))
+// for(contar = 1;par < max; contar++){
+//         msg += par + ", "
+//         par = contar * 2
+// }
+
+// alert(msg)
+
+
+/*
+===== For Of array, String ======
+
+for (variable of objeto){
+        código 
+}
+*/
+
+// let canasta = ["Manzana","Pera","Naranja","Uva"]
+
+// for(fruta of canasta){
+//         console.log(fruta);
+// }
+
+
+/*
+==== for in ----> objetos
+
+propiedades = Valor
+
+array, string
+
+item
+for (Variable in objeto){
+código
 }
 
-alert(msg)
+*/
+
+const ListaDeCompra ={
+        manzana: 5,
+        pera: 3,
+        naranja: 2,
+        uva: 5
+} 
+
+for (fruta in ListaDeCompra) {
+        console.log(fruta);
+}
+
+for(fruta in ListaDeCompra){
+        console.log(`${fruta} : ${ListaDeCompra[fruta]}`);
+}
+
+for(fruta of ListaDeCompra){
+        console.log(fruta);
+}
