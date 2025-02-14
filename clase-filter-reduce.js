@@ -23,5 +23,13 @@ console.log(sum);
 
 const words = ['Work','Apple','Hello','Apple','Hello','Hello']
 const wordFrencuency = words.reduce((acumalator,currentValue) => {
-    
-})
+    if(acumalator[currentValue]){
+        acumalator[currentValue]++
+    }else{
+        acumalator[currentValue] = 1
+    }
+
+    return acumalator
+},{})
+
+console.log(wordFrencuency);
