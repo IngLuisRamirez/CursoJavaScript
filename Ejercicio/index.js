@@ -37,7 +37,7 @@ const userTimeLine = [
 
 const username = prompt('Ingrese Usuario')
 const password = prompt('Ingrese Password')
-
+// function que sirve para verificar si en la base de datos existe el usuario 
 function usuarioExistente (username,password){
     for(let i = 0; i < UsersDataBase.length; i++ ){
         if (
@@ -51,7 +51,7 @@ function usuarioExistente (username,password){
         }
     }
 }
-
+// Function que sirve para el inicio de sesión
 function signIn(username,password){
     if(usuarioExistente(username,password)){
         alert(`Bienvenido a tu cuenta ${username}`)
